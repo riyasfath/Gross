@@ -1,0 +1,45 @@
+import java.util.Scanner;
+class Employee {
+private String name;
+private int id;
+private double age;
+private int mark;
+// Constructor to initialize the employee details
+public Employee(String name, int id, double age, int mark)
+{
+this.name = name;
+this.id = id;
+this.age = age;
+this.mark = mark;
+}
+// Method to calculate the gross salary
+public void studentDetails() {
+}
+// Method to print the employee details
+public void printDetails() {
+System.out.println("Name: " + name);
+System.out.println("ID: " + id);
+System.out.println(" age : " + age);
+System.out.println(" mark: " + mark);
+}
+}
+public class Main1 {
+public static void main(String[] args) {
+Scanner scanner = new Scanner(System.in);
+// Read the employee details
+System.out.print("Enter the name of Student : ");
+String name = scanner.nextLine();
+System.out.print("Enter the ID of the Student: ");
+int id = scanner.nextInt();
+System.out.print("Enter the age of the student: ");
+double age = scanner.nextDouble();
+System.out.print("Enter the  mark of the Student: ");
+int mark = scanner.nextInt();
+// Create an employee object and initialize it with the details
+Employee employee = new Employee(name, id, age,
+mark);
+
+// Print the employee details
+employee.printDetails();
+}
+}
